@@ -1,7 +1,7 @@
-package factorydesignpaattern;
+package abstractfactorydesignpaattern;
 
-public class OttFactory {
-    public OttPlatform getInstance(String str){
+public class OttPlatformFactory extends  AbstractFactory {
+    public Platform getInstance(String str){
         if(str.equals("Costly"))
             return new Netflix();
         else if(str.equals("Moderate"))
